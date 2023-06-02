@@ -1,0 +1,176 @@
+* {
+    margin: 0px;
+}
+@font-face {
+    font-family: 'Baloo-Tammudu-Regular';
+    src:url('Baloo-Tammudu-Regular.ttf.woff') format('woff'),
+        url('Baloo-Tammudu-Regular.ttf.svg#Baloo-Tammudu-Regular') format('svg'),
+        url('Baloo-Tammudu-Regular.ttf.eot'),
+        url('Baloo-Tammudu-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+}
+h1 {
+    font-family: 'Baloo-Tammudu-Regular';
+    font-size: 2.2em;
+    font-style: normal;
+    font-weight: 100;
+    color: #fff;  
+    margin-top: 0.5em;
+    line-height: 1.5em;
+}
+body{
+    height: 100vh;
+    background-color: #555261;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: column;
+}
+.backhead {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    background-image: url("../photo/lake.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 20%;   
+    height: fit-content;    
+}
+.backhead a {
+    display: flex;         
+    align-items: center;
+    width: fit-content;    
+    background-image: linear-gradient(to bottom right, #9699bf  30%, #a18cd1 60%);
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 0px 1.5em;
+    text-decoration: none;
+}
+.backhead a img {
+    width: 3em;
+    margin-right: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.headlist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;    
+    list-style: none;
+    background-image: linear-gradient(to bottom right, #9699bf  30%, #a18cd1 60%);
+    border-radius: 0 0 15px 15px;
+    padding-top: 0.5em;
+}
+.headlist li {
+    text-align: center;
+}
+.headlist li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+    font-family: 'Baloo-Tammudu-Regular';    
+    line-height: 1.5em;
+}
+
+/* Main */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.RetEx {    
+    background-image: linear-gradient(to bottom right, #9699bf  30%, #a18cd1 60%);
+    border-radius: 15px;
+    padding: 1em 1em 1em 2em;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 55%;
+    margin: 2em 0 2em 0;
+}
+.RetEx section {
+    display: flex;
+    flex-direction: column;
+}
+.RetEx section div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 2em;
+    padding: 1em 0 1em 0;
+    width: 80%;
+}
+.RetEx section a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+section div a img {
+    height: 10em;    
+}
+.container {
+    position: relative;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.container img {
+    display: block;
+    max-width: 100%;
+    height: auto;  
+    border-radius: 50%;  
+    transition: filter 0.3s ease;
+}
+.container:hover img {
+    filter: blur(5px);
+}
+.container h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-family: 'Baloo-Tammudu-Regular';
+    font-size: 1.5em;
+    line-height: 1em;
+    font-style: normal;
+    font-weight: 100;
+    color: #fff;  
+}
+.container:hover h2 {
+    opacity: 1;
+}
+
+@media screen and (max-width:500px) {
+    .headlist li a {
+        font-size: 1em;
+        line-height: 1em;
+    }
+    .backhead a h1 {
+        font-size: 1.5em;
+    }
+    .RetEx {
+        width: 80%;
+    }
+    .container {
+        width: 100px;
+        height: 100px;
+    }
+    .container h2 {
+        opacity: 1;
+        font-size: 1em;
+    }
+    .container img {
+        filter: blur(5px);
+    }
+}

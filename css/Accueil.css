@@ -1,0 +1,202 @@
+* {
+    margin: 0px;
+}
+@font-face {
+    font-family: 'Baloo-Tammudu-Regular';
+    src:url('Baloo-Tammudu-Regular.ttf.woff') format('woff'),
+        url('Baloo-Tammudu-Regular.ttf.svg#Baloo-Tammudu-Regular') format('svg'),
+        url('Baloo-Tammudu-Regular.ttf.eot'),
+        url('Baloo-Tammudu-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+}
+h1 {
+    font-family: 'Baloo-Tammudu-Regular';
+    font-size: 2.5em;
+    font-style: normal;
+    font-weight: 1;
+    color: #fff;  
+    margin-top: 0.5em;
+    line-height: 1.5em;
+}
+body{
+    height: 100vh;
+    background-color: #555261;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: column;
+}
+.backhead {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    background-image: url("../photo/lake.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 20%;   
+    height: fit-content;
+    
+}
+.backhead div {
+    display: flex;         
+    align-items: center;
+    width: fit-content;    
+    background-image: linear-gradient(to bottom right, #9699bf  30%, #a18cd1 60%);
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 0px 1.5em;
+}
+.backhead div img {
+    clip-path:ellipse(50% 37%);
+    width: 4em;
+    margin-right: 1.5em;
+}
+.headlist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;    
+    list-style: none;
+    background-image: linear-gradient(to top, #9699bf  30%, #a18cd1 60%);
+    border-radius: 0 0 15px 15px;
+    padding-top: 0.5em;
+}
+.headlist li {
+    text-align: center;
+}
+.headlist li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+    font-family: 'Baloo-Tammudu-Regular';    
+    line-height: 1.5em;
+}
+
+/* Main */
+main{
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+}
+.Accueil {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-image: linear-gradient(to bottom right, #9699bf  30%, #a18cd1 60%);
+    border-radius: 15px;
+    height: fit-content;
+    width: 50%;
+    padding: 2em;
+    margin: 0 6em;
+}
+
+
+/* Accueil */
+.Accueil p {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    font-weight: bold;    
+    line-height: 1em;
+    margin-bottom: 2em;
+}
+.Description {
+    display: flex;
+    flex-direction: row;   
+}
+.Description .Compétences {
+    width: 50%;
+}
+.Description .Qualités {
+    width: 50%;
+}
+.Description .Compétences ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;    
+    list-style: none;
+    padding-left: 0;
+    margin-top: 2em;    
+    width: 70%;
+}
+.Description .Compétences ul li {
+    text-align: center;       
+}
+.Description .Compétences ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size:1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    font-weight: bold;    
+    line-height: 1em;
+}
+
+/* Expériences */
+.Icons {
+    display: flex;
+    flex-direction: column; 
+    justify-content: start; 
+    width: 30%;   
+}
+.Icons ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    list-style: none;    
+    padding-left: 0;
+    width: 90%;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to bottom, #9699bf  30%, #a18cd1 60%);
+    border-radius: 0 0 15px 15px;
+}
+.Icons ul li {
+    text-align: center;
+    width: 30%;
+    margin: 1em 0;    
+}
+.Icons ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size:1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    font-weight: bold;    
+    line-height: 1em;
+}
+.Icons ul li a img {
+    margin-bottom: 0.5em;
+}
+
+@media screen and (max-width:1024px) { 
+    main {
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+    .Icons {
+        display: none;
+    }
+    .Accueil {
+        width: 80%;
+    }
+    .Description .Compétences {
+        width: 100%;
+    }
+    .Description .Compétences ul {
+        width: 100%;
+    }
+}
+@media screen and (max-width:700px) {
+    .headlist li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1em;
+        font-family: 'Baloo-Tammudu-Regular';    
+        line-height: 1em;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+}

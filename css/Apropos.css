@@ -1,0 +1,203 @@
+* {
+    margin: 0px;
+}
+@font-face {
+    font-family: 'Baloo-Tammudu-Regular';
+    src:url('Baloo-Tammudu-Regular.ttf.woff') format('woff'),
+        url('Baloo-Tammudu-Regular.ttf.svg#Baloo-Tammudu-Regular') format('svg'),
+        url('Baloo-Tammudu-Regular.ttf.eot'),
+        url('Baloo-Tammudu-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+}
+h1 {
+    font-family: 'Baloo-Tammudu-Regular';
+    font-size: 2.2em;
+    font-style: normal;
+    font-weight: 100;
+    color: #fff;  
+    margin-top: 0.5em;
+    line-height: 1.5em;
+}
+body{
+    height: 100vh;
+    background-color: #555261;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: column;
+}
+.backhead {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    background-image: url("../photo/lake.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 20%;   
+    height: fit-content;    
+}
+.backhead a {
+    display: flex;         
+    align-items: center;
+    width: fit-content;    
+    background-image: linear-gradient(to bottom right, #9699bf  30%, #a18cd1 60%);
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 0px 1.5em;
+    text-decoration: none;
+}
+.backhead a img {
+    width: 3em;
+    margin-right: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.headlist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;    
+    list-style: none;
+    background-image: linear-gradient(to bottom right, #9699bf  30%, #a18cd1 60%);
+    border-radius: 0 0 15px 15px;
+    padding-top: 0.5em;
+}
+.headlist li {
+    text-align: center;
+}
+.headlist li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+    font-family: 'Baloo-Tammudu-Regular';    
+    line-height: 1.5em;
+}
+
+/* Main */
+main{
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+}
+
+/* A propos */
+.Exprofs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 5em;
+    margin-left: 1em;
+}
+.Exprofs > div{
+    background-image: linear-gradient(to bottom right, #9699bf  30%, #a18cd1 60%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: fit-content;
+    padding: 1em 2em 3em 2em;
+    border-radius: 20px;
+}
+.Skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.Skills .Qualités {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;    
+    margin-bottom: 1em;
+}
+.Qualités .Compétences {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    background-image: linear-gradient(to bottom right, #9699bf  30%, #a18cd1 60%); 
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 0 2em 0 2em;
+    border-radius: 15px;
+}
+.Formations {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom right, #9699bf  30%, #a18cd1 60%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+    border-radius: 15px;
+    width: fit-content;
+    height: fit-content;
+    padding: 0 2em 2em 2em;
+}
+.Skills .Qualités img {
+    height: 14em;
+    background-image: linear-gradient(to bottom right, #9699bf  30%, #a18cd1 60%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 0.5em;
+    border-radius: 15px;
+    margin-left: 2em;
+}
+#pointList {    
+    list-style: disc;
+}
+#pointList li {
+    padding: 0.5em 0 0.5em 0;
+}
+#pointList li div {
+    display: flex;
+}
+#pointList li b {
+    font-size: 1.1em;
+    font-family: 'Baloo-Tammudu-Regular';
+    color: #fff;
+    line-height: 1em;
+    font-style: normal;
+    font-weight: 100;
+}
+#pointList li p {
+    font-size: 1.1em;
+    font-family: 'Baloo-Tammudu-Regular';
+    font-weight: 100;
+    line-height: 1em;
+}
+.Compétences #pointList li {
+    font-size: 1.2em;
+    font-family: 'Baloo-Tammudu-Regular';
+    font-weight: 100;
+    line-height: 1em;
+    padding: 0.1 0 0.1 0;
+}
+@media screen and (max-width:1000px) { 
+    main{
+        flex-direction: column;
+    }
+    .Skills {
+        width: 100%;
+        margin-top: 2em;
+    }
+    .Formations {
+        margin-bottom: 2em;
+    }
+    .Exprofs {
+        margin-right: 0;
+        align-items: center;
+        margin-right: 0;
+    }
+}
+@media screen and (max-width:500px) {
+    .headlist li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1em;
+        font-family: 'Baloo-Tammudu-Regular';    
+        line-height: 1em;
+    }
+    .backhead a h1 {
+        font-size: 1.5em;
+    }
+    .Qualités img {
+        display: none;
+    }
+}
